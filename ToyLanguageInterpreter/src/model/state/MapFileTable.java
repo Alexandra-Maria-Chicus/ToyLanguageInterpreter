@@ -41,6 +41,14 @@ public class MapFileTable implements FileTable{
             throw new RuntimeException(e);
         }
     }
+    @Override
+    public Map<String, BufferedReader> getContent() {
+        Map<String, BufferedReader> content = new HashMap<>();
+        for (Map.Entry<StringValue, BufferedReader> entry : fileTable.entrySet()) {
+            content.put(entry.getKey().val(), entry.getValue());
+        }
+        return content;
+    }
 
     @Override
     public String toString() {

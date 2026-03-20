@@ -2,19 +2,19 @@ package model.statement;
 
 import exception.StatementExecutionException;
 import model.expression.Expression;
+import model.state.MyIDictionary;
 import model.state.PrgState;
-import model.type.StringType;
+import model.type.Type;
 import model.value.StringValue;
 import model.value.Value;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 
 public record CloseRFileStmt(Expression expression) implements IStmt{
     @Override
     public PrgState execute(PrgState state) throws StatementExecutionException {
-        Value val= expression().evaluate(state.getSymTable());
+        Value val= expression().evaluate(state.getSymTable(), state.getHeap());
         if(!(val instanceof StringValue))
             throw new StatementExecutionException("Wrong type of expression");
         StringValue fileName = (StringValue) val;
@@ -28,7 +28,7 @@ public record CloseRFileStmt(Expression expression) implements IStmt{
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        return state;
+        return null;
     }
 
     @Override
@@ -39,5 +39,11 @@ public record CloseRFileStmt(Expression expression) implements IStmt{
     @Override
     public IStmt deepCopy() {
         return new CloseRFileStmt(expression().deepCopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) {
+        expression.typecheck(typeEnv);
+        return typeEnv;
     }
 }

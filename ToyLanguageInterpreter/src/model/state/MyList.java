@@ -25,4 +25,9 @@ public class MyList<T> implements MyIList<T>{
         return builder.toString();
     }
 
+    @Override
+    public String toStringList() {
+        return toString();
+    }
+
 }

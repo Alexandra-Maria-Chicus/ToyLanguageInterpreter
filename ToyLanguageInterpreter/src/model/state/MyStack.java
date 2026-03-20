@@ -1,7 +1,6 @@
 package model.state;
 
-import java.util.EmptyStackException;
-import java.util.Stack;
+import java.util.*;
 
 public class MyStack<T> implements MyIStack<T>{
     private final Stack<T> exeStack;
@@ -32,6 +31,14 @@ public class MyStack<T> implements MyIStack<T>{
         newStack.exeStack.addAll(exeStack);
         return newStack;
     }
+
+    @Override
+    public List<T> getStackAsList() {
+        List<T> list = new ArrayList<>(exeStack);
+        Collections.reverse(list);
+        return list;
+    }
+
 
     @Override
     public String toString() {

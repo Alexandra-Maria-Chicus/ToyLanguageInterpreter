@@ -36,7 +36,8 @@ public class MainView {
         MyIList<String> output=new MyList<>();
         MyIDictionary<String, Value> symTable=new MyDictionary<>();
         FileTable fileTable=new MapFileTable();
-        PrgState current= new PrgState(exestack,symTable,output, ex1,fileTable);
+        IHeap<Value> heap=new MyHeap<>();
+        PrgState current= new PrgState(exestack,symTable,output, ex1,fileTable,heap,1);
 
         repo.add(current);
     }
@@ -52,7 +53,8 @@ public class MainView {
         MyIList<String> output=new MyList<>();
         MyIDictionary<String, Value> symTable=new MyDictionary<>();
         FileTable fileTable=new MapFileTable();
-        PrgState current= new PrgState(exestack,symTable,output, ex2,fileTable);
+        IHeap<Value> heap=new MyHeap<>();
+        PrgState current= new PrgState(exestack,symTable,output, ex2,fileTable,heap,1);
 
         repo.add(current);
     }
@@ -68,7 +70,8 @@ public class MainView {
         MyIList<String> output=new MyList<>();
         MyIDictionary<String, Value> symTable=new MyDictionary<>();
         FileTable fileTable=new MapFileTable();
-        PrgState current= new PrgState(exestack,symTable,output, ex3,fileTable);
+        IHeap<Value> heap=new MyHeap<>();
+        PrgState current= new PrgState(exestack,symTable,output, ex3,fileTable,heap,1);
 
         repo.add(current);
     }
@@ -92,7 +95,8 @@ public class MainView {
         MyIList<String> output=new MyList<>();
         MyIDictionary<String, Value> symTable=new MyDictionary<>();
         FileTable fileTable=new MapFileTable();
-        PrgState current= new PrgState(exestack,symTable,output, finalExample,fileTable);
+        IHeap<Value> heap=new MyHeap<>();
+        PrgState current= new PrgState(exestack,symTable,output, finalExample,fileTable,heap,1);
 
         repo.add(current);
     }
@@ -111,9 +115,6 @@ public class MainView {
         controller.allStep();
     }
 
-    public void oneStep(IController controller, PrgState state) throws StatementExecutionException {
-        controller.oneStep(state);
-    }
     public void run(){
         menu();
         Scanner scanner = new Scanner(System.in);
@@ -139,11 +140,6 @@ public class MainView {
                 }
                 case 5:{
                     executeProgram(controller);
-                    break;
-                }
-                case 6: {
-                    PrgState state=repo.getCurrProg();
-                    oneStep(controller,state);
                     break;
                 }
                 default: {

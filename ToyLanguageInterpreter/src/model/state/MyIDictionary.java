@@ -3,6 +3,8 @@ package model.state;
 import model.type.Type;
 import model.value.Value;
 
+import java.util.Map;
+
 public interface MyIDictionary<K, V> {
     void setValue(K variableName, V value);
     boolean isDefined(K variableName);
@@ -11,4 +13,6 @@ public interface MyIDictionary<K, V> {
     MyIDictionary<K, V> deepCopy();
     Value getValue(K variableName);
     String toString();
+    Map<K,V> getContent();
+    void putType(K variableName, Type type);
 }

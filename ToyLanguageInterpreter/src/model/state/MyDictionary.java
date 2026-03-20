@@ -26,6 +26,11 @@ public class MyDictionary<K,V> implements MyIDictionary<K, V> {
     }
 
     @Override
+    public Map<K, V> getContent() {
+        return dictionary;
+    }
+
+    @Override
     public void setValue(K variableName, V value)  {
         this.dictionary.put(variableName, value);
     }
@@ -35,11 +40,24 @@ public class MyDictionary<K,V> implements MyIDictionary<K, V> {
         return dictionary.containsKey(variableName);
     }
 
+
     @Override
     public Type getType(K variableName) {
-        return ((Value)dictionary.get(variableName)).getType();
+        V value = dictionary.get(variableName);
+        if (value instanceof Type) {
+            return (Type) value;
+        } else if (value instanceof Value) {
+            return ((Value) value).getType();
+        } else {
+            throw new IllegalStateException("Value is neither Type nor Value instance");
+        }
     }
 
+    @Override
+    public void putType(K variableName, Type type) {
+        // Stores the Type object directly, not the default value.
+        dictionary.put(variableName, (V) type);
+    }
     @Override
     public void declareVariable(K variableName, Type type) {
         dictionary.put(variableName,(V) type.getDefaultValue());

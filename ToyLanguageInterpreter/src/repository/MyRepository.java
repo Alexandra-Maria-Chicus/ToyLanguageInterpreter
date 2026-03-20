@@ -20,13 +20,6 @@ public class MyRepository implements IRepository{
     }
 
     @Override
-    public PrgState getCurrProg() throws NoSuchElementException {
-        if (repository.isEmpty()) {
-            throw new NoSuchElementException("The program repository is empty. Load an example first.");
-        }
-        return repository.getLast();
-    }
-    @Override
     public void add(PrgState currState) {
         repository.add(currState);
     }
@@ -41,5 +34,15 @@ public class MyRepository implements IRepository{
         catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public List<PrgState> getPrgStates() {
+        return repository;
+    }
+
+    @Override
+    public void setPrgList(List<PrgState> prgList) {
+        this.repository=prgList;
     }
 }

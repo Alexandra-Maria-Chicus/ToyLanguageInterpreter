@@ -2,8 +2,11 @@ package model.statement;
 
 import exception.StatementExecutionException;
 import model.expression.Expression;
+import model.state.MyIDictionary;
 import model.state.PrgState;
 import model.type.IntType;
+import model.type.StringType;
+import model.type.Type;
 import model.value.IntValue;
 import model.value.StringValue;
 import model.value.Value;
@@ -20,7 +23,7 @@ public record ReadFileStmt(Expression exp, String var_name) implements IStmt {
         }
         if(!state.getSymTable().getType(var_name).equals(new IntType()))
             throw new StatementExecutionException("Variable "+var_name+" is not IntType");
-        Value val=exp.evaluate(state.getSymTable());
+        Value val=exp.evaluate(state.getSymTable(), state.getHeap());
 
         if(!(val instanceof StringValue)){
             throw new StatementExecutionException("Value "+val+" is not StringValue");
@@ -46,7 +49,7 @@ public record ReadFileStmt(Expression exp, String var_name) implements IStmt {
             throw new RuntimeException(e);
         }
         state.getSymTable().setValue(var_name, readIntValue);
-        return state;
+        return null;
     }
     @Override
 
@@ -57,5 +60,19 @@ public record ReadFileStmt(Expression exp, String var_name) implements IStmt {
     @Override
     public IStmt deepCopy() {
         return new ReadFileStmt(exp.deepCopy(), var_name);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) {
+        Type typeExp=exp.typecheck(typeEnv);
+        if(typeExp.equals(new StringType())){
+            if(typeEnv.getType(var_name).equals(new IntType())){
+                return typeEnv;
+            } else {
+                throw new StatementExecutionException("Variable "+var_name+" is not IntType");
+            }
+        } else {
+            throw new StatementExecutionException("Expression "+exp.toString()+" is not StringType");
+        }
     }
 }

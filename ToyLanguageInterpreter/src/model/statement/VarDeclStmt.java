@@ -1,6 +1,7 @@
 package model.statement;
 
 import exception.StatementExecutionException;
+import model.state.MyIDictionary;
 import model.state.PrgState;
 import model.type.Type;
 
@@ -13,7 +14,7 @@ public record VarDeclStmt(Type type, String variableName) implements IStmt {
             throw new StatementExecutionException("Variable " + variableName + " is already defined");
         }
         symbolTable.declareVariable(variableName, type);
-        return state;
+        return null;
     }
 
     @Override
@@ -24,5 +25,11 @@ public record VarDeclStmt(Type type, String variableName) implements IStmt {
     @Override
     public IStmt deepCopy() {
         return new VarDeclStmt(type, variableName);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) {
+        typeEnv.putType(variableName, type);
+        return typeEnv;
     }
 }
