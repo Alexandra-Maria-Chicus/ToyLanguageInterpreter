@@ -1,0 +1,776 @@
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+( v;(new(v, 20);( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+ v
+(new(v, 20);( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+ v
+(new(v, 20);( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+ v
+(new(v, 20);( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+ v
+(new(v, 20);( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 20)
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 20)
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 20)
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 20)
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 20)
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 20)
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 20)
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 20)
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+( v;(new(v, 20);( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+ v
+(new(v, 20);( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+ v
+(new(v, 20);( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+(new(v, 20);( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+(new(v, 20);( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 20)
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 20)
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (0, Int)
+Out:
+FileTable:
+Heap:
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+( a;(new(a, v);(new(v, 30);print(readHeap(readHeap(a))))))
+SymTable:
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+ a
+(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))
+SymTable:
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+ a
+(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))
+SymTable:
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+(new(a, v);(new(v, 30);print(readHeap(readHeap(a)))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(a, v)
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (0, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (2, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+(new(v, 30);print(readHeap(readHeap(a))))
+SymTable:
+a --> (2, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 30)
+print(readHeap(readHeap(a)))
+SymTable:
+a --> (2, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+new(v, 30)
+print(readHeap(readHeap(a)))
+SymTable:
+a --> (2, Ref Int)
+v --> (1, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+print(readHeap(readHeap(a)))
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+print(readHeap(readHeap(a)))
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
+--------------------------------------------------------
+Program State ID: 8
+ExeStack:
+SymTable:
+a --> (2, Ref Int)
+v --> (3, Int)
+Out:
+20
+FileTable:
+Heap:
+1 -> 20
+2 -> (1, Int)
+3 -> 30
+--------------------------------------------------------
